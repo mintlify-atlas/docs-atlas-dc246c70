@@ -1,0 +1,144 @@
+{
+  "projectType": "cli-tool",
+  "projectName": "Neru",
+  "projectDescription": "Keyboard-driven navigation for macOS - Navigate and click without touching your mouse",
+  "theme": "aspen",
+  "primaryColor": "#6366F1",
+  "lightColor": "#818CF8",
+  "darkColor": "#4F46E5",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Installation",
+            "pages": [
+              "installation/homebrew",
+              "installation/nix",
+              "installation/source",
+              "installation/permissions"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/navigation-modes",
+              "concepts/recursive-grid",
+              "concepts/grid",
+              "concepts/hints",
+              "concepts/scroll",
+              "concepts/mouse-actions"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/overview",
+              "configuration/hotkeys",
+              "configuration/colors-fonts",
+              "configuration/modes",
+              "configuration/exclusions",
+              "configuration/examples"
+            ]
+          },
+          {
+            "group": "Usage",
+            "pages": [
+              "usage/getting-started",
+              "usage/keyboard-shortcuts",
+              "usage/screen-sharing",
+              "usage/app-compatibility"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/troubleshooting",
+              "advanced/performance",
+              "advanced/scripting"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "CLI Reference",
+        "groups": [
+          {
+            "group": "Commands",
+            "pages": [
+              "cli/overview",
+              "cli/daemon",
+              "cli/navigation",
+              "cli/actions",
+              "cli/services",
+              "cli/config",
+              "cli/status"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Development",
+        "groups": [
+          {
+            "group": "Contributing",
+            "pages": [
+              "development/overview",
+              "development/architecture",
+              "development/building",
+              "development/testing",
+              "development/coding-standards"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Recursive Grid Navigation - Coordinate-based screen navigation that works everywhere",
+    "Grid Mode - Quick coarse navigation with coordinate grid",
+    "Hints Mode - Accessibility-driven clickable element labeling",
+    "Vim-Style Scrolling - Familiar j/k/gg/G keyboard scrolling",
+    "Direct Mouse Actions - Left/right/middle click, drag & drop via keybindings",
+    "Full CLI Control - IPC-based command-line interface for automation",
+    "Per-App Exclusions - Disable Neru in specific applications",
+    "TOML Configuration - Version-controllable, shareable configuration"
+  ],
+  "publicApiSurface": [
+    "neru launch - Start the daemon",
+    "neru hints - Show clickable hints mode",
+    "neru grid - Show coordinate grid mode",
+    "neru recursive_grid - Start recursive grid navigation",
+    "neru scroll - Enable vim-style scrolling",
+    "neru action left_click - Perform left click at cursor",
+    "neru action right_click - Perform right click at cursor",
+    "neru action middle_click - Perform middle click at cursor",
+    "neru action mouse_down - Hold mouse button",
+    "neru action mouse_up - Release mouse button",
+    "neru action move_mouse - Move to absolute coordinates",
+    "neru action move_mouse_relative - Move by relative delta",
+    "neru services install - Install launchd service",
+    "neru services uninstall - Remove launchd service",
+    "neru services start - Start the service",
+    "neru services stop - Stop the service",
+    "neru services status - Check service status",
+    "neru config reload - Reload configuration",
+    "neru config dump - Show current configuration",
+    "neru status - Show daemon status",
+    "neru start - Resume paused daemon",
+    "neru stop - Pause daemon",
+    "neru idle - Cancel active mode",
+    "neru toggle-screen-share - Toggle overlay in screen sharing",
+    "neru doctor - Check component health",
+    "neru profile - Show profiling instructions",
+    "neru metrics - Display metrics"
+  ]
+}
